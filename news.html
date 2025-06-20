@@ -3,16 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>News</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #news-container {
+        margin: 0 auto;
+        padding: 1rem 3rem;
+      }
+
+      @media (min-width: 640px) {
+        .news-container {
+          padding: 0 1.5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .news-container {
+          padding: 0 3rem;
+        }
+      }
+      @media (min-width: 1280px) {
+        .my-container {
+          padding: 0 4rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header>
-      <!-- Navigation -->
+      <!-- Brand name-->
       <h3 id="">Creativity</h3>
+      <!-- Navigation bar-->
       <nav>
-        <ul id="nav-container" style="height: 60px">
+        <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
@@ -22,8 +48,8 @@
         </ul>
       </nav>
     </header>
-    <hr />
-    <main class="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 py-12">
+    <!-- News container -->
+    <main class="container shadow-lg" id="news-container">
       <h2 class="text-3xl font-bold mb-8 text-center">Latest News</h2>
       <div class="grid grid-cols-1 gap-8 items-start">
         <!-- News 1 -->
@@ -32,6 +58,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 1"
@@ -39,11 +66,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 1</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>
@@ -55,6 +84,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 2"
@@ -62,11 +92,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 2</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>
@@ -79,6 +111,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 3"
@@ -86,11 +119,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 3</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>
@@ -102,6 +137,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 4"
@@ -109,11 +145,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 4</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>
@@ -125,6 +163,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 5"
@@ -132,11 +171,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 5</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>
@@ -148,6 +189,7 @@
           class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
         >
           <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- News image -->
             <img
               src="img/news2.jpg"
               alt="News 6"
@@ -155,11 +197,13 @@
             />
             <article class="bg-white p-6">
               <div>
+                <!-- News title -->
                 <h3 class="text-xl font-semibold mb-2">News 6</h3>
+                <!-- News date -->
                 <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <!-- News description -->
                 <p class="text-gray-700 flex-1 mb-4">
-                  Here’s another brief summary, showing how multiple cards will
-                  look side by side.
+                  Here’s brief summary, showing what news going to be.
                 </p>
               </div>
             </article>

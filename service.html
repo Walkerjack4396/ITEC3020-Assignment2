@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Service</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <style>
+    #quote-container{
+      height: 500px;
+      background-color: rgb(250, 250, 250);
+    }
+
+    #services-container{
+      height: 800px;
+      background-color:aliceblue;
+
+    }
+  </style>
   <body>
     <header>
-      <h3 id="">Creativity</h3>
+      <h3 >Creativity</h3>
       <nav>
         <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
@@ -21,10 +34,57 @@
       </nav>
     </header>
     <main>
-      <div class="container"></div>
+      <section class="container shadow-lg" id="quote-container">
+        <div class="grid grid-cols-2 items-center ml-10 mr-16">
+          <div class="p-12 text-center ">
+            <figure>
+              <blockquote class="text-3xl text-blue-700 m-6">
+                Your vision is <span class="font-semibold" >bold.</span><br />
+                Our guidance is <span class="font-semibold">clear.</span>
+              </blockquote>
+              <figcaption class="text-lg">- Service Staff, Consultant</figcaption>
+            </figure>
+          </div>
+        <figure>          
+          <div class="mt-auto">
+          <img src="/image/service-staff-image.jpg" alt="Service Staff" class="mt-16 w-full object-cover h-84 p-16 " />
+        </div>
+      </figure>
 
-      <div class="container"></div>
-      <div class="container"></div>
+        </div>  
+      </section>
+
+      <section class="container shadow-lg" id="services-container">
+        <div class="p-12">
+          <h1 class="text-5xl text-bold text-center mb-20">Our Services</h1>
+          <div class="grid gap-12">
+            <div class="shadow-sm">
+              <h2 class="text-3xl font-sm mb-4">Graphics Solutions</h2>
+              <p class="text-xl">
+                Providing state-of-the-art graphics solutions that empower your
+                digital projects to shine.
+              </p>
+            </div>
+            <hr>
+            <div class="shadow-sm">
+              <h2 class="text-3xl font-sm mb-4">Consultation & Support</h2>
+              <p class="text-xl">
+                Expert advice and assistance to help you optimize your hardware
+                and software integration.
+              </p>
+            </div>
+            <hr>
+            <div class="shadow-sm">
+              <h2 class="text-3xl font-sm mb-4">Custom 3D Hardware Design</h2>
+              <p class="text-xl"> 
+                Designing tailored 3D solutions to meet the specific needs of
+                gaming and professional industries.
+              </p>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
     </main>
     <footer></footer>
   </body>

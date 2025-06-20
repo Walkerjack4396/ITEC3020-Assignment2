@@ -3,13 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
     <title>Home</title>
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Internal style-->
+    <style>
+      section {
+        height: 400px;
+      }
+      #welcome-container {
+        background-color: rgb(250, 250, 250);
+      }
+      #feature-container {
+        height: 600px;
+        background-color: azure;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h3 id="">Creativity</h3>
+      <!-- Brand name -->
+      <h3>Creativity</h3>
       <nav>
+        <!-- Navigation bar -->
         <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -21,9 +40,60 @@
       </nav>
     </header>
     <main>
-      <div class="container"><div id="banner"></div></div>
-      <div class="container"></div>
-      <div class="container"></div>
+      <!-- welcome-container -->
+      <section class="container shadow-lg" id="welcome-container">
+        <div class="grid grid-cols-2 items-center gap-8">
+          <div>
+            <h1 class="text-4xl font-bold p-8">Welcome to Creativity!</h1>
+            <p class="ml-12 text-xl italic">
+              "Powering the future of 3D graphics with groundbreaking
+              technology".
+            </p>
+          </div>
+          <img
+            src="/image/Unknown.jpeg"
+            alt="banner image"
+            class="w-full h-80 object-cover"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="container shadow-lg" id="feature-container">
+        <div class="ml-24 mr-24 items-center">
+          <h2 class="text-5xl font-bold text-left p-20 mb-12 text-center">
+            Our Features
+          </h2>
+          <ul class="grid grid-cols-3 text-lg text-gray-700 gap-16">
+            <li>
+              <h3 class="text-xl font-semibold mb-4">
+                High-performance graphics solutions
+              </h3>
+              <p class="text-md">
+                Real-time rendering and simulation with top-tier frame rates and
+                image fidelity.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl font-semibold mb-4">
+                Innovative 3D rendering technology
+              </h3>
+              <p class="text-md">
+                Cutting-edge ray tracing and AI boosts for stunning visuals at
+                faster speeds.
+              </p>
+            </li>
+            <li>
+              <h3 class="text-xl font-semibold mb-4">
+                Expert support and consultation services
+              </h3>
+              <p class="text-md">
+                Personalized technical guidance, performance tuning, and
+                tailored solutions.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

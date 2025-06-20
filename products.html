@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #products-container {
+        margin: 0 auto;
+        background-color: aliceblue;
+      }
+    </style>
   </head>
+
   <body>
     <header>
-      <!-- Navigation -->
+      <!-- Brand name-->
       <h3 id="">Creativity</h3>
+      <!-- Navigation bar-->
       <nav>
-        <ul id="nav-container" style="height: 60px">
+        <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
@@ -22,25 +31,31 @@
         </ul>
       </nav>
     </header>
-    <hr />
-    <main class="container mx-auto">
+    <!-- Product container -->
+    <main class="container shadow-lg" id="products-container">
       <h2 class="text-3xl font-bold mb-8 text-center">Our Products</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Product Card -->
         <!-- Product 1 -->
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/1.jpg"
             alt="Product 1"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">
+              Creativity VoodooVision Classic
+            </h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              A faithful revival of the original 3D accelerator, featuring 4 MB
+              ST-GRAM and full legacy compatibility for true retro gaming.
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"
@@ -53,16 +68,23 @@
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/2.png"
             alt="Product 2"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 2</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">
+              Creativity Banshee Balanced
+            </h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              The perfect all-rounder with 16 MB DRAM, seamlessly blending 2D
+              and 3D acceleration for smooth multimedia and gaming performance
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"
@@ -75,16 +97,23 @@
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/3.png"
             alt="Product 3"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 3</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">
+              Creativity VoodooStorm 2000
+            </h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              AGP 2X support and integrated TV-Out, pushing a 90 MHz core clock
+              to deliver crisp visuals in all your favorite classic titles.
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"
@@ -97,16 +126,21 @@
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/4.jpg"
             alt="Product 4"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 4</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">Creativity DualRend SLI</h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              Dual-chip architecture for unmatched polygon throughput and
+              advanced texture filtering, creating more immersive 3D worlds.
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"
@@ -119,16 +153,23 @@
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/5.jpg"
             alt="Product 5"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 5</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">
+              Creativity PixelForge Ultra
+            </h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              High-performance, overclocked edition with 8 MB SGRAM and enhanced
+              texture filtering—every pixel rendered razor-sharp.
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"
@@ -141,16 +182,23 @@
         <div
           class="border border-gray-200 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-gray-400 hover:scale-110 transition"
         >
+          <!-- Product image -->
           <img
-            src="img/product2.jpg"
+            src="/image/6.jpg"
             alt="Product 6"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Product 6</h3>
+            <!-- Product title -->
+            <h3 class="text-xl font-semibold mb-2">
+              Creativity VisionXtreme Pro
+            </h3>
+            <!-- Product description -->
             <p class="text-gray-600 mb-4">
-              A brief description of the product’s features and selling points.
+              Flagship low-profile design with advanced cooling and SLI
+              readiness, built for the most demanding legacy-gaming rigs.
             </p>
+            <!-- Learn more button -->
             <a
               href="#"
               class="mt-auto inline-block text-white font-sm py-2 px-4 bg-blue-600 rounded hover:bg-blue-700"

@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
+    <!-- font awesome link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      #contact-container {
+        margin: 0 auto;
+        background-color: aliceblue;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <!-- Navigation -->
-      <h3 id="">Creativity</h3>
+      <!-- Brand name-->
+      <h3 id="brand-name">Creativity</h3>
+      <!-- Navigation bar-->
       <nav>
-        <ul id="nav-container" style="height: 60px">
+        <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
@@ -28,33 +37,29 @@
         </ul>
       </nav>
     </header>
-    <hr />
-    <main class="container mx-auto py-12">
+    <!-- Contact container -->
+    <main class="container shadow-lg" id="contact-container">
       <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
       <form action="#" method="POST" class="max-w-lg mx-auto space-y-6">
         <!-- Name -->
         <div>
-          <label for="name" class="block mb-1 text-sm font-medium"
-            >Your Name</label
-          >
+          <label for="name" class="block mb-1 text-sm">Your Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full border border-gray-300 rounded px-4 py-2"
             required
           />
         </div>
         <!-- Email -->
         <div>
-          <label for="email" class="block mb-1 text-sm font-medium"
-            >Email Address</label
-          >
+          <label for="email" class="block mb-1 text-sm">Email Address</label>
           <input
             type="email"
             id="email"
             name="email"
-            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full border border-gray-300 rounded px-4 py-2"
             required
           />
         </div>
@@ -67,19 +72,17 @@
             type="text"
             id="subject"
             name="subject"
-            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full border border-gray-300 rounded px-4 py-2"
           />
         </div>
         <!-- Message -->
         <div>
-          <label for="message" class="block mb-1 text-sm font-medium"
-            >Message</label
-          >
+          <label for="message" class="block mb-1 text-sm">Message</label>
           <textarea
             id="message"
             name="message"
             rows="5"
-            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full border border-gray-300 rounded px-4 py-2"
             required
           ></textarea>
         </div>
@@ -95,28 +98,28 @@
       </form>
       <!-- Social Media -->
       <div class="mt-8 flex justify-center space-x-6">
+        <!-- LinkedIn -->
         <a
           href="https://www.linkedin.com/"
           target="_blank"
-          rel="noopener"
           class="text-gray-600 hover:text-blue-700 transition"
           aria-label="LinkedIn"
         >
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
+        <!-- Github -->
         <a
           href="https://github.com/"
           target="_blank"
-          rel="noopener"
           class="text-gray-600 hover:text-gray-900 transition"
           aria-label="GitHub"
         >
           <i class="fab fa-github fa-2x"></i>
         </a>
+        <!-- Instagram -->
         <a
           href="https://instagram.com/"
           target="_blank"
-          rel="noopener"
           class="text-gray-600 hover:text-pink-500 transition"
           aria-label="Instagram"
         >
@@ -124,6 +127,7 @@
         </a>
       </div>
     </main>
+    <!-- Footer -->
     <footer><p>© 2025 Creativity · All rights reserved.</p></footer>
   </body>
 </html>
