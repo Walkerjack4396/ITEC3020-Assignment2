@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
+      <!-- Navigation -->
       <h3 id="">Creativity</h3>
       <nav>
-        <ul id="nav-container">
+        <ul id="nav-container" style="height: 60px">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
@@ -20,12 +22,155 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="container"></div>
+    <hr />
+    <main class="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Latest News</h2>
+      <div class="grid grid-cols-1 gap-8 items-start">
+        <!-- News 1 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 1"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 1</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
+        <!-- News 2 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 2"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 2</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
 
-      <div class="container"></div>
-      <div class="container"></div>
+        <!-- News 3 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 3"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 3</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
+        <!-- News 4 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 4"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 4</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
+        <!-- News 5 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 5"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 5</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
+        <!-- News 6 -->
+        <a
+          href="#"
+          class="block bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-400 transition"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img
+              src="img/news2.jpg"
+              alt="News 6"
+              class="w-full h-48 md:h-[20rem] object-cover rounded-lg"
+            />
+            <article class="bg-white p-6">
+              <div>
+                <h3 class="text-xl font-semibold mb-2">News 6</h3>
+                <p class="text-sm text-gray-500 mb-4">June 8, 2025</p>
+                <p class="text-gray-700 flex-1 mb-4">
+                  Here’s another brief summary, showing how multiple cards will
+                  look side by side.
+                </p>
+              </div>
+            </article>
+          </div>
+        </a>
+      </div>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Creativity · All rights reserved.</p>
+    </footer>
   </body>
 </html>
