@@ -4,13 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Base styles for the page body */
 body {
   font-family: "Arial", sans-serif;
   background-color: white;
   color: #333;
 }
 
-/* Navigation Bar */
+/* Navigation bar container */
 #nav-container {
   display: flex;
   justify-content: center;
@@ -19,6 +20,7 @@ body {
   list-style-type: none;
   background-color: #2d5bf1;
 }
+/* Navigation links */
 #nav-container a {
   text-decoration: none;
   color: white;
@@ -26,35 +28,34 @@ body {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-
+/* Hover effect for navigation links */
 #nav-container a:hover {
   transform: scale(1.1);
 }
-
+/* Header title styling */
 header h3 {
   font-style: italic;
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
 }
-
+/* Global link hover transition */
 a {
   transition: transform 0.3s ease;
 }
-
+/* Global link hover effect */
 a:hover {
   font-size: large;
   transform: scale(1.05);
 }
-
+/* Main content container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
 }
-
-/* Footer */
+/* Footer section styling */
 footer {
   background-color: #2d5bf1;
   color: white;
