@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
     <title>About</title>
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Internal style-->
     <style>
       body {
         margin: 0 auto;
@@ -21,8 +25,10 @@
   </head>
   <body>
     <header>
-      <h3 id="">Creativity</h3>
+      <!-- Brand name -->
+      <h3>Creativity</h3>
       <nav>
+        <!-- Navigation Bar -->
         <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -35,18 +41,23 @@
     </header>
     <hr />
     <main>
+      <!-- Quote-container -->
       <section class="container shadow-lg" id="quote-container">
+        <!-- Grid layout -->
         <div class="grid grid-cols-2 items-center">
           <div class="p-6 text-center">
+            <!-- Quote from CEO -->
             <figure>
               <blockquote class="text-3xl text-blue-700 m-8">
                 “Innovation and creativity drive us to make the impossible
                 possible in the world of 3D graphics.”
               </blockquote>
+              <!-- CEO name -->
               <figcaption class="text-lg">— John Doe, CEO</figcaption>
             </figure>
           </div>
           <div class=" mb-auto">
+            <!-- CEO image -->
             <figure>
               <img
                 src="image/staff-image.jpg"
@@ -57,49 +68,63 @@
           </div>
         </div>
       </section>
+      <!-- introduction-container -->
       <section class="container shadow-lg" id="introduction-container">
+        <!-- Grid layout -->
         <div class="grid grid-cols-1 gap-8 ml-10">
           <div class="max-w-3xl p-8 h-80 space-y-6">
+            <!-- Introduction Heading -->
             <h2 class="text-5xl font-bold mb-12">About Our Company</h2>
+            <!-- Company information -->
             <p class="text-xl text-gray-700 leading-relaxed mb-4">
-              Over the past ten years, we’ve been dedicated to harnessing
+              Over the past ten years, we've been dedicated to harnessing
               cutting-edge technology to advance creativity and drive innovation
               across industries, developing intuitive tools and bespoke
               solutions that empower individuals and organizations worldwide.
             </p>
           </div>
           <hr />
+          <!-- Grid layout -->
           <div class="grid grid-cols-2">
             <div class="p-12">
+              <!-- Mission Heading -->
               <h2 class="text-4xl font-semibold mb-8">Our Mission</h2>
+              <!-- Mission information-->
               <ul class="grid text-xl gap-8 text-gray-700 pr-12">
                 To create innovative solutions that empower our clients to
                 achieve their goals.
               </p>
             </div>
             <div>
+              <!-- Mission image -->
               <img src="image/missions.png" alt="values" class="w-80 mt-10 ml-10 object-cover h-auto rounded-lg" />
             </div>
           </div>
           <hr />
+          <!-- Grid layout -->
           <div class="grid grid-cols-2 items-center">
             <div class="p-12">
+              <!-- Team Heading -->
               <h2 class="text-4xl font-semibold mb-8">Our Team</h2>
+              <!-- Team member -->
               <ul class="grid text-xl gap-8 text-gray-700">
-                <li>John Doe – CEO</li>
-                <li>Jane Smith – CTO</li>
-                <li>Emma Brown – Marketing Lead</li>
+                <li>John Doe - CEO</li>
+                <li>Jane Smith - CTO</li>
+                <li>Emma Brown - Marketing Lead</li>
               </ul>
             </div>
             <div>
+              <!-- Team image -->
               <img src="image/team.png" alt="values" class="w-80 mt-10 ml-10 object-cover h-auto rounded-lg  " />
             </div>
           </div>
-
           <hr />
+          <!-- Grid layout -->
           <div class="grid grid-cols-2">
             <div class="p-12">
+              <!-- Values Heading -->
               <h2 class="text-4xl font-semibold mb-8">Our Values</h2>
+              <!-- Values information -->
               <ul class="grid text-2xl gap-8 text-gray-700 ">
                 <li>Innovation</li>
                 <li>Integrity</li>
@@ -107,12 +132,16 @@
               </ul>
             </div>
             <div>
+              <!-- Value image -->
               <img src="image/value.png" alt="values" class="w-80 mt-10 ml-10 object-cover h-auto rounded-lg" />
             </div>
           </div>
         </div>
       </section>
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 Creativity · All rights reserved.</p>
+      </footer>
     </main>
-    <footer></footer>
   </body>
 </html>

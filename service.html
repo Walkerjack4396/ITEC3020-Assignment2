@@ -3,26 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title-->
     <title>Service</title>
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Internal style-->
+    <style>
+      #quote-container{
+        height: 500px;
+        background-color: rgb(250, 250, 250);
+      }
+  
+      #services-container{
+        height: 800px;
+        background-color:aliceblue;
+  
+      }
+    </style>
   </head>
-  <style>
-    #quote-container{
-      height: 500px;
-      background-color: rgb(250, 250, 250);
-    }
 
-    #services-container{
-      height: 800px;
-      background-color:aliceblue;
-
-    }
-  </style>
   <body>
     <header>
+      <!-- Brand name -->
       <h3 >Creativity</h3>
-      <nav>
+      <nav> 
+        <!-- Navigation Bar -->
         <ul id="nav-container">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -34,10 +41,13 @@
       </nav>
     </header>
     <main>
+      <!-- quote-container -->
       <section class="container shadow-lg" id="quote-container">
+        <!-- Grid layout -->
         <div class="grid grid-cols-2 items-center ml-10 mr-16">
           <div class="p-12 text-center ">
             <figure>
+              <!-- Quote -->
               <blockquote class="text-3xl text-blue-700 m-6">
                 Your vision is <span class="font-semibold" >bold.</span><br />
                 Our guidance is <span class="font-semibold">clear.</span>
@@ -45,19 +55,22 @@
               <figcaption class="text-lg">- Service Staff, Consultant</figcaption>
             </figure>
           </div>
-        <figure>          
           <div class="mt-auto">
-          <img src="image/service-staff-image.jpg" alt="Service Staff" class="mt-16 w-full object-cover h-84 p-16 " />
+            <!-- Quote image -->
+            <figure>
+              <img src="image/service-staff-image.jpg" alt="Service Staff" class="mt-16 w-full object-cover h-84 p-16 " />
+            </figure>
         </div>
-      </figure>
-
-        </div>  
+        </figure>
+      </div>  
       </section>
-
+      <!-- services-container -->
       <section class="container shadow-lg" id="services-container">
         <div class="p-12">
+          <!-- Service Heading -->
           <h1 class="text-5xl text-bold text-center mb-20">Our Services</h1>
           <div class="grid gap-12">
+            <!-- Service 1-->
             <div class="shadow-sm">
               <h2 class="text-3xl font-sm mb-4">Graphics Solutions</h2>
               <p class="text-xl">
@@ -66,6 +79,7 @@
               </p>
             </div>
             <hr>
+            <!-- Service 2-->
             <div class="shadow-sm">
               <h2 class="text-3xl font-sm mb-4">Consultation & Support</h2>
               <p class="text-xl">
@@ -74,6 +88,7 @@
               </p>
             </div>
             <hr>
+            <!-- Service 3-->
             <div class="shadow-sm">
               <h2 class="text-3xl font-sm mb-4">Custom 3D Hardware Design</h2>
               <p class="text-xl"> 
@@ -86,6 +101,9 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Creativity · All rights reserved.</p>
+    </footer>
   </body>
 </html>
