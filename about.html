@@ -15,7 +15,7 @@
         margin: 0 auto;
       }
       #quote-container {
-        height: 500px;
+        height: 600px;
         background-color: rgb(250, 250, 250);
       }
       #introduction-container {
@@ -24,21 +24,7 @@
     </style>
   </head>
   <body>
-    <header>
-      <!-- Brand name -->
-      <h3>Creativity</h3>
-      <nav>
-        <!-- Navigation Bar -->
-        <ul id="nav-container">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-container"></div>
     <hr />
     <main>
       <!-- Quote-container -->
@@ -68,11 +54,12 @@
           </div>
         </div>
       </section>
+      <hr />
       <!-- introduction-container -->
       <section class="container shadow-lg" id="introduction-container">
         <!-- Grid layout -->
         <div class="grid grid-cols-1 gap-8 ml-10">
-          <div class="max-w-3xl p-8 h-80 space-y-6">
+          <div class="max-w-3xl p-8 h-80 space-y-6 mb-16">
             <!-- Introduction Heading -->
             <h2 class="text-5xl font-bold mb-12">About Our Company</h2>
             <!-- Company information -->
@@ -159,9 +146,8 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer>
-        <p>© 2025 Creativity · All rights reserved.</p>
-      </footer>
+      <div id="footer-container"></div>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>

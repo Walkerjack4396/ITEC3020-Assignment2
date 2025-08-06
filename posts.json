@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Implementing Light/Dark Mode Switcher",
+    "author": "Your Name",
+    "date": "2025-07-31",
+    "excerpt": "This post explains how I added a theme switcher using CSS variables and localStorage to persist user preference.",
+    "link": "#",
+    "content": "Implementing a Light/Dark Mode Switcher involves a combination of styling and logic to allow users to toggle between visual themes—typically a light background with dark text, and a dark background with light text. The core idea is to apply a CSS class (commonly called 'dark-mode') to the <body> or a root element, which changes color properties using CSS rules.\n\nWhen the page loads, a script checks the user's previous choice (if any) from localStorage, a browser feature that retains data even after the page is refreshed. If the user previously selected dark mode, the 'dark-mode' class is applied immediately to ensure consistency across sessions.\n\nA toggle switch (usually a checkbox styled as a button) allows the user to change the mode interactively. When the switch is clicked, the script adds or removes the 'dark-mode' class accordingly. It also updates the value in localStorage so the preference is remembered the next time the user visits.\n\nThe CSS then does the heavy lifting: it defines base styles for light mode, and overrides them when 'dark-mode' is active. This includes changes to background colors, text colors, buttons, and other elements. Optional transitions can be used to smooth the switch visually.\n\nThe approach is efficient, scalable, and doesn’t require reloading the page or fetching new stylesheets. It separates concerns cleanly: JavaScript handles state and toggling logic, while CSS manages the actual appearance. This makes it easy to maintain and extend across different pages."
+  },
+  {
+    "title": "Dynamic Blog Section with JSON",
+    "author": "Your Name",
+    "date": "2025-07-31",
+    "excerpt": "Here I describe how I fetched and rendered blog posts from a JSON file using vanilla JavaScript.",
+    "link": "#",
+    "content": "Creating a dynamic blog section using JSON allows for clean separation of content and logic. I started by defining an external JSON file (`posts.json`) that stores each blog post’s title, date, excerpt, and full content. Then, I used the `fetch` API in JavaScript to load this data asynchronously when the page loads. Once the JSON data is retrieved, I looped through the array of posts and dynamically generated HTML elements for each entry using `document.createElement` and `innerHTML`. Each post preview is styled using Tailwind CSS and includes an event listener so that when clicked, the full content replaces the preview area. This method ensures that the blog is flexible and easy to update—new posts can be added simply by updating the JSON file without touching any HTML. It also improves performance by keeping the HTML minimal and generating only what’s needed at runtime."
+  }
+  
+]

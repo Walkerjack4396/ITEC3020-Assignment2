@@ -63,3 +63,120 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
+/* ===== Dark Mode Toggle Switch ===== */
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch label {
+  background-color: orange;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch label::after {
+  content: "🌞";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.toggle-switch input:checked + label {
+  background-color: black;
+}
+
+.toggle-switch input:checked + label::after {
+  transform: translateX(30px);
+  background-color: rgb(72, 72, 101);
+  content: "🌙";
+}
+
+/* Dark-Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Roboto", sans-serif;
+}
+
+.dark-mode .container {
+  background-color: #1a1a1a;
+}
+
+.dark-mode #nav-container {
+  background-color: #b19cd9;
+}
+
+.dark-mode footer {
+  background-color: #b19cd9;
+  color: #282424;
+}
+
+.dark-mode #welcome-container,
+.dark-mode #feature-container,
+.dark-mode #quote-container,
+.dark-mode #introduction-container,
+.dark-mode #services-container,
+.dark-mode #products-container,
+.dark-mode #contact-container,
+.dark-mode #news-container {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+.dark-mode #news-container button {
+  background-color: #b19cd9;
+  color: #1a1a1a;
+}
+
+.dark-mode #news-container button:hover {
+  background-color: #a78ed6;
+}
+
+.dark-mode #quote-container blockquote {
+  color: #8ab4f8;
+}
+.dark #quote-container figcaption {
+  color: #bbbbbb;
+}
+.dark-mode #feature-container ul li,
+.dark-mode #introduction-container p,
+.dark-mode #introduction-container ul,
+.dark-mode #introduction-container ol,
+.dark-mode #services-container div div,
+.dark-mode #news-container div,
+.dark-mode #news-container .cursor-pointer div {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #e0e0e0;
+}
+
+.dark-mode #products-container a {
+  background-color: #053376;
+  color: #e0e0e0;
+}
+.dark-mode #news-container .cursor-pointer p {
+  color: #e0e0e0;
+}
+
+.dark-mode #contact-container input,
+.dark-mode #contact-container textarea {
+  background-color: #454343;
+}

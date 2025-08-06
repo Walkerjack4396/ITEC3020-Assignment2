@@ -12,7 +12,7 @@
     <!-- Internal style-->
     <style>
       #quote-container{
-        height: 500px;
+        height: 600px;
         background-color: rgb(250, 250, 250);
       }
   
@@ -25,21 +25,8 @@
   </head>
 
   <body>
-    <header>
-      <!-- Brand name -->
-      <h3 >Creativity</h3>
-      <nav> 
-        <!-- Navigation Bar -->
-        <ul id="nav-container">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-container"></div>
+    <hr>
     <main>
       <!-- quote-container -->
       <section class="container shadow-lg" id="quote-container">
@@ -58,12 +45,13 @@
           <div class="mt-auto">
             <!-- Quote image -->
             <figure>
-              <img src="image/service-staff-image.jpg" alt="Service Staff" class="mt-16 w-full object-cover h-84 p-16 " />
+              <img src="image/service-staff-image.jpg" alt="Service Staff" class=" w-full object-cover h-84 p-16 " />
             </figure>
         </div>
         </figure>
       </div>  
       </section>
+      <hr>
       <!-- services-container -->
       <section class="container shadow-lg" id="services-container">
         <div class="p-12">
@@ -100,8 +88,8 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer>
-      <p>© 2025 Creativity · All rights reserved.</p>
-    </footer>
+    <div id="footer-container"></div>
+    <script src="scripts.js"></script>
+
   </body>
 </html>
